@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Aprobado,reprobado"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:31:13 p. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDc6MjA6MjUgcC4gbS47MjM4Mg=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDc6MzE6MTMgcC4gbS47MTsyNDg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="calif" type="Integer" array="False" size=""/>
+            <input variable="calif"/>
+            <if expression="calif&lt;=10">
+                <then>
+                    <if expression="calif&gt;=0">
+                        <then>
+                            <if expression="calif&lt;6">
+                                <then>
+                                    <output expression="&quot;reprobado&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;aprobado&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;ilogico&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ilogico&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

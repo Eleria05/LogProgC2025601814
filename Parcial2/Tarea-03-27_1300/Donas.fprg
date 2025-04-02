@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:01:46 p. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDc6NDc6NDcgcC4gbS47MjM5NQ=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDk6MDE6NDYgcC4gbS47MTsyNDk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dona" type="Integer" array="False" size=""/>
+            <declare name="cantidad" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <input variable="cantidad"/>
+            <if expression="cantidad&gt;=50">
+                <then>
+                    <assign variable="total" expression="cantidad*8.0"/>
+                </then>
+                <else>
+                    <if expression="cantidad&gt;=30">
+                        <then>
+                            <assign variable="total" expression="cantidad*9.0"/>
+                        </then>
+                        <else>
+                            <assign variable="total" expression="cantidad*10.0"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;el total es $&quot;&amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

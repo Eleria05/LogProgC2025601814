@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Sala de juegos"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 12:59:33 a. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDE7MTA6MjM6MTcgcC4gbS47MjM3NA=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDI7MTI6NTk6MzMgYS4gbS47MjsyNDc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alumnos" type="String" array="False" size=""/>
+            <assign variable="alumnos" expression="&quot;&quot;"/>
+            <output expression="&quot;Inicial de su nombre&quot;" newline="True"/>
+            <declare name="genero" type="String" array="False" size=""/>
+            <input variable="genero"/>
+            <output expression="&quot;sexo&quot;" newline="True"/>
+            <declare name="mujer" type="String" array="False" size=""/>
+            <declare name="hombre" type="String" array="False" size=""/>
+            <input variable="alumnos"/>
+            <if expression="alumnos&gt;=&quot;a&quot;">
+                <then>
+                    <if expression="alumnos==&quot;m&quot;">
+                        <then>
+                            <if expression="alumnos &lt;=&quot;z&quot;">
+                                <then>
+                                    <if expression="genero&gt;=&quot;mujer&quot; AND genero&gt;&quot;hombre&quot;">
+                                        <then>
+                                            <output expression="&quot;grupo a&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;grupo b&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ilogico&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ilogico&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

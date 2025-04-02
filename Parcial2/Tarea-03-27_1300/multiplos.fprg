@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="multiplos"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:41:08 p. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDc6MzI6MDUgcC4gbS47MjM4Mw=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDMtMjY7MDc6NDE6MDggcC4gbS47MTsyNDk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="entero" type="Integer" array="False" size=""/>
+            <input variable="entero"/>
+            <if expression="entero%2==0">
+                <then>
+                    <output expression="&quot;multiplo de 2&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="entero%3==0">
+                <then>
+                    <output expression="&quot;multiplo de 3&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="entero%5==0">
+                <then>
+                    <output expression="&quot;multiplo de 5&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
