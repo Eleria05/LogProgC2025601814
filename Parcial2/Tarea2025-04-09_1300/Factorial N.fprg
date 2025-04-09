@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial N"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 07:40:13 p. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDg7MDY6MzY6MzYgcC4gbS47MjM5MQ=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDg7MDc6NDA6MTMgcC4gbS47MTsyNDkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;Elija el numero que desea factorizar....&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="c" start="1" end="n" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*c"/>
+            </for>
+            <output expression="&quot;El factorial es &quot;&amp;factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

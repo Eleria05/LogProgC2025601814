@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Secuencia Fibonacci"/>
+        <attribute name="authors" value="juan2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 11:39:35 p. m."/>
+        <attribute name="created" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDg7MDk6MzY6MDcgcC4gbS47MjM5Mg=="/>
+        <attribute name="edited" value="anVhbjI7RUxFUklBOzIwMjUtMDQtMDg7MTE6Mzk6MzUgcC4gbS47MTsyNDk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeros, a, b, c, contador" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="a" expression="0"/>
+            <output expression="&quot;Digite el numero de elementos...&quot;" newline="True"/>
+            <input variable="numeros"/>
+            <for variable="contador" start="1" end="numeros" direction="inc" step="1">
+                <assign variable="c" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <output expression="c" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
